@@ -10,12 +10,6 @@ const hasNoExtension = (fileName) => {
   return !matches;
 };
 
-const hasMultipleExtensions = (fileName) => {
-  const matches = fileName.match(/\./g);
-
-  return matches && matches.length > 1;
-};
-
 const isSafeName = (fileName) => {
   return /^[a-z][a-z0-9._]+$/i.test(fileName);
 };
